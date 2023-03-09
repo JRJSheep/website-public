@@ -65,7 +65,7 @@ $s['tHeadArchitectures'] = '体系结构';
 $s['latestPublicRelease'] = '公开发布的最新内部版本';
 $s['latestPublicReleaseSub'] = '最新用于普通用户的更新版本。';
 $s['latestDevRelease'] = '最新 Dev 通道版本';
-$s['latestDevReleaseSub'] = '具有最新功能的内部版本，运行可能不稳定。<br>适合高度技术性用户。';
+$s['latestDevReleaseSub'] = '具有新想法和长引导功能的内部版本，运行有些不可靠。<br>适合高度技术性用户。';
 $s['latestBetaRelease'] = '最新 Beta 通道版本';
 $s['latestBetaReleaseSub'] = '具有最新可用功能的内部版本，运行较为可靠。<br>适合早期采用者。';
 $s['latestRPRelease'] = '最新发布预览通道版本';
@@ -77,6 +77,18 @@ $s['fetchLatest'] = '获取最新内部版本';
 $s['fetchLatestSub'] = '从 Windows 更新服务器检索最新的内部版本信息。';
 $s['newlyAdded'] = '新增内部版本';
 $s['dateAdded'] = '添加日期';
+$s['latestCanaryRelease'] = '最新 Canary 渠道版本';
+$s['latestCanaryReleaseSub'] = '具有最新平台更改和早期功能的内部版本，运行有些不稳定。<br>非常适合技术水平高的用户。';
+
+//newbuild.php
+$s['newBuild'] = '新增内部版本';
+$s['addNewBuild'] = '添加新内部版本';
+$s['selectOptions'] = '选择选项';
+$s['newBuildNextText'] = '点击<i>下一步</i>按钮开始搜索指定的选项。';
+$s['newBuildUsing'] = '使用此页面';
+$s['newBuildUsingText'] = '此页面旨在供希望添加在网站上找不到的版本的高级用户使用。如果你想使用最常用的参数之一，请使用主页上的<i>快速选项</i>之一。';
+$s['optionsNotice'] = '选项注意';
+$s['optionsNoticeText'] = '此处找到的选项是配置基础 Windows 更新客户端向 Microsoft 服务器报告自身的方式。正确设置这些内容至关重要，否则你将会收到错误。';
 
 //known.php
 $s['browseKnown'] = '浏览已知内部版本';
@@ -111,7 +123,7 @@ $s['browseFiles'] = '浏览文件';
 $s['browseFilesDesc'] = '快速浏览所选内部版本中的文件';
 $s['searchFiles'] = '搜索文件';
 $s['toSearchForCUUseQuery'] = '若要搜索累积更新，请使用 <i>%s</i> 搜索查询。'; //To search for Cumulative Updates use the <i>Windows10 KB</i> search query.
-$s['updateNotProcessed'] = 'UUP dump 尚未处理此更新的元数据 —— 这会每 %d 分钟自动执行一次。在此之前，你只能浏览更新的文件列表。'; //UUP dump hasn't processed this update's metadata yet - this happens automatically once every 30 minutes. You can only browse the update's file list until then.
+$s['updateNotProcessed'] = 'UUP dump 尚未处理此更新的元数据 —— 这会每 %d 分钟自动发生一次。在此之前，你只能浏览更新的文件列表。'; //UUP dump hasn't processed this update's metadata yet - this happens automatically once every 30 minutes. You can only browse the update's file list until then.
 $s['updateIsBlocked'] = '此更新存在阻止创建工作 ISO 文件的已知问题。因此，你只能手动浏览其文件。';
 
 //selectedition.php
@@ -160,7 +172,7 @@ $s['startDownload'] = '创建下载包';
 $s['legalCopeHarder'] = '点击<i>创建下载包</i>按钮即表示你同意以下内容：';
 $s['legalCope1'] = '使用 UUP dump 提供的脚本创建的安装映像仅可用于<b>评估目的</b>';
 $s['legalCope2'] = 'Microsoft Corporation <b>不以任何方式支持</b>映像及其部署';
-$s['legalCope3v2'] = '<b>作者对因滥用本网站</b>而造成的任何损害概不负责';
+$s['legalCope3v2'] = '<b>作者不会对</b>因滥用本网站所<b>导致的任何损害负责</b>';
 $s['win1122h2OrLater'] = 'Windows 11，版本 22H2 及以上';
 $s['requiresWindows102004'] = '此版本需要使用 Windows 10 版本 2004 或更高版本才能正确创建 ISO。其他平台的脚本将会输出一个损坏的 ISO 文件。';
 
@@ -272,6 +284,7 @@ $s['lang_zh-hk'] = '中文（香港）';
 $s['lang_zh-tw'] = '中文（繁体）';
 
 //Channels
+$s['channel_canary'] = 'Canary 渠道';
 $s['channel_skipAhead'] = 'Skip Ahead';
 $s['channel_dev'] = 'Dev 渠道';
 $s['channel_beta'] = 'Beta 渠道';
