@@ -23,6 +23,7 @@ $s['updateid'] = '更新 ID';
 $s['update'] = '更新名称';
 $s['lang'] = '语言';
 $s['edition'] = '版本';
+$s['type'] = '更新类型（仅Windows Core OS）';
 $s['seachForBuilds'] = '搜索内部版本……';
 $s['no'] = '否';
 $s['yes'] = '是';
@@ -89,6 +90,10 @@ $s['newBuildUsing'] = '使用此页面';
 $s['newBuildUsingText'] = '此页面旨在供希望添加在网站上找不到的版本的高级用户使用。如果你想使用最常用的参数之一，请使用主页上的<i>快速选项</i>之一。';
 $s['optionsNotice'] = '选项注意';
 $s['optionsNoticeText'] = '此处找到的选项是配置基础 Windows 更新客户端向 Microsoft 服务器报告自身的方式。正确设置这些内容至关重要，否则你将会收到错误。';
+$s['otherOptions'] = '其他选项';
+$s['otherOpt1'] = '仅检查指定内部版本';
+$s['otherOpt2'] = '检查标记为 [Internal Corpnet Required] 的内部更新';
+$s['otherOptNotice'] = '（仅针对桌面版本生效）';
 
 //known.php
 $s['browseKnown'] = '浏览已知内部版本';
@@ -117,12 +122,14 @@ $s['updateOnly'] = '仅更新';
 $s['selectLangInfoText1'] = '点击<i>下一步</i>按钮选择你要下载的版本。';
 $s['selectLangInfoText2'] = 'WindowsUpdateBox.exe 和累积更新可以在<i>全语言</i>中找到。';
 $s['allLangsWarn'] = '<i>全语言</i>选项不支持版本选择。';
-$s['clickNextToOpenFindFiles'] = '单击<i>下一步</i>按钮打开页面，该页面将允许你查找文件。';
+$s['clickNextToOpenFindFiles'] = '单击<i>下一步</i>按钮打开页面，此页面将允许你查找文件。';
 $s['noLangsAvailable'] = '在此内部版本中没有可用的语言。';
+$s['Metadatanotgenerated'] = '此更新的元数据未生成。';
+$s['Generatemetadata'] = '生成元数据';
 $s['browseFiles'] = '浏览文件';
 $s['browseFilesDesc'] = '快速浏览所选内部版本中的文件';
 $s['searchFiles'] = '搜索文件';
-$s['toSearchForCUUseQuery'] = '若要搜索累积更新，请使用 <i>%s</i> 搜索查询。'; //To search for Cumulative Updates use the <i>Windows10 KB</i> search query.
+$s['toSearchForCUUseQuery'] = '若要搜索累积更新，请使用 <i>%s</i> 搜索查询。'; //To search for Cumulative Updates use the <i>Windows KB</i> search query.
 $s['updateNotProcessed'] = 'UUP dump 尚未处理此更新的元数据 —— 这会每 %d 分钟自动发生一次。在此之前，你只能浏览更新的文件列表。'; //UUP dump hasn't processed this update's metadata yet - this happens automatically once every 30 minutes. You can only browse the update's file list until then.
 $s['updateIsBlocked'] = '此更新存在阻止创建工作 ISO 文件的已知问题。因此，你只能手动浏览其文件。';
 
@@ -168,6 +175,8 @@ $s['convOpt1'] = '使用固实压缩（ESD）';
 $s['convOpt2'] = '当可用时集成更新（仅限 Windows 转换程序）';
 $s['convOpt3'] = '在集成更新后运行清理（仅限 Windows 转换程序）';
 $s['convOpt4'] = '集成 .NET Framework 3.5（仅限 Windows 转换程序）';
+$s['convOpt5'] = '运行清理时删除组件存储中所有已被取代的组件（仅限 Windows 转换程序）';
+$s['conversionAdvOptions'] = '高级选项';
 $s['startDownload'] = '创建下载包';
 $s['legalCopeHarder'] = '点击<i>创建下载包</i>按钮即表示你同意以下内容：';
 $s['legalCope1'] = '使用 UUP dump 提供的脚本创建的安装映像仅可用于<b>评估目的</b>';
@@ -175,6 +184,7 @@ $s['legalCope2'] = 'Microsoft Corporation <b>不以任何方式支持</b>映像�
 $s['legalCope3v2'] = '<b>作者不会对</b>因滥用本网站所<b>导致的任何损害负责</b>';
 $s['win1122h2OrLater'] = 'Windows 11，版本 22H2 及以上';
 $s['requiresWindows102004'] = '此版本需要使用 Windows 10 版本 2004 或更高版本才能正确创建 ISO。其他平台的脚本将会输出一个损坏的 ISO 文件。';
+$s['aria2Opt4'] = '仅针对更新创建下载包';
 
 //get.php
 $s['listOfFilesFor'] = '%s 的文件列表'; //List of files for Windows 10 Insider Preview 18890.1000 (rs_prerelease) amd64
@@ -199,6 +209,9 @@ $s['fileRenamingScriptGenL'] = '生成重命名脚本（Linux、macOS）';
 $s['searchForFiles'] = '查找文件……';
 $s['weFoundFiles'] = '在你的查询中我们找到了 <b>%d</b> 个文件。'; //We have found <b>692</b> files for your query.
 $s['sizeOfShownFiles'] = '显示文件大小：%s'; //Size of shown files: 2.86 GiB
+
+//style.php
+$s['render'] = '呈现页面用时 %s 毫秒。'; //Page rendered in 1 ms.
 
 //Error pages
 $s['error'] = '错误';
@@ -284,6 +297,7 @@ $s['lang_zh-hk'] = '中文（香港）';
 $s['lang_zh-tw'] = '中文（繁体）';
 
 //Channels
+$s['channel_msit'] = 'MSIT';
 $s['channel_canary'] = 'Canary 渠道';
 $s['channel_skipAhead'] = 'Skip Ahead';
 $s['channel_dev'] = 'Dev 渠道';
